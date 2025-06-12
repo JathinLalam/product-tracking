@@ -1,0 +1,147 @@
+{
+    "info": {
+        "name": "Product-Tracking",
+        "_postman_id": "57a16d70-2233-42a0-82cd-ea54079a85d3",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All the producrs",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:8080/api/products",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "products"
+                    ]
+                },
+                "method": "GET",
+                "header": [],
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Product By Id",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:8080/api/products/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "products",
+                        "1"
+                    ]
+                },
+                "method": "GET",
+                "header": [],
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update the Product",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:8080/api/products/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "products",
+                        "1"
+                    ]
+                },
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"product-1\",\n    \"price\": 210.00\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create the Product",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:8080/api/products",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "products"
+                    ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"product-1\",\n    \"description\": \"Description for the product 1\",\n    \"price\": 200.00\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Remove the Product",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:8080/api/products/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "products",
+                        "1"
+                    ]
+                },
+                "method": "DELETE",
+                "header": [],
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [],
+    "variable": []
+}
